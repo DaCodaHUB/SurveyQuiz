@@ -3,37 +3,37 @@
     "id": 1,
     "question": "Which superpower do you wish to have?",
     "answerA": "Super strength",
-    "percentageA": 0,
+    "totalA": 0,
     "answerB": "Speed of light",
-    "percentageB": 0,
+    "totalB": 0,
     "answerC": "Telepathy",
-    "percentageC": 0,
+    "totalC": 0,
     "answerD": "Genius",
-    "percentageD": 0
+    "totalD": 0
   },
   {
     "id": 2,
     "question": "What do you think about your own body image?",
     "answerA": "Fat",
-    "percentageA": 0,
+    "totalA": 0,
     "answerB": "Thin",
-    "percentageB": 0,
+    "totalB": 0,
     "answerC": "Fit",
-    "percentageC": 0,
+    "totalC": 0,
     "answerD": "Fantastic",
-    "percentageD": 0
+    "totalD": 0
   },
   {
     "id": 3,
     "question": "Thing Women Hate to Hear",
     "answerA": "Relax",
-    "percentageA": 0,
+    "totalA": 0,
     "answerB": "Who taught you how to parallel park?",
-    "percentageB": 0,
+    "totalB": 0,
     "answerC": "Don’t make such a big deal about everything",
-    "percentageC": 0,
+    "totalC": 0,
     "answerD": "Whoa, you’re so sensitive",
-    "percentageD": 0
+    "totalD": 0
   }
 ]
 
