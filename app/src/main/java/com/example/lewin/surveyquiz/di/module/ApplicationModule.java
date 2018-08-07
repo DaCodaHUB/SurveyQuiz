@@ -3,9 +3,6 @@ package com.example.lewin.surveyquiz.di.module;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.database.sqlite.SQLiteDatabase;
-
-import com.example.lewin.surveyquiz.di.ApplicationContext;
 
 import dagger.Module;
 import dagger.Provides;
@@ -20,7 +17,6 @@ public class ApplicationModule {
     }
 
     @Provides
-    @ApplicationContext
     Context provideContext() {
         return mApplication;
     }

@@ -6,8 +6,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
-import com.example.lewin.surveyquiz.di.ActivityContext;
-
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -23,7 +21,6 @@ public class ActivityModule {
     }
 
     @Provides
-    @ActivityContext
     Context provideContext() {
         return mActivity;
     }

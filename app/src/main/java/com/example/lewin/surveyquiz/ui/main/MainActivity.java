@@ -1,19 +1,15 @@
-package com.example.lewin.surveyquiz;
+package com.example.lewin.surveyquiz.ui.main;
 
-import android.support.v7.app.AppCompatActivity;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 
-//import com.mindorks.example.android_dagger2_example.data.DataManager;
-//import com.mindorks.example.android_dagger2_example.data.model.User;
+import com.example.lewin.surveyquiz.Fragments.StartFragment.StartFragment;
+import com.example.lewin.surveyquiz.R;
+import com.example.lewin.surveyquiz.SurveyApplication;
 import com.example.lewin.surveyquiz.di.components.ActivityComponent;
 import com.example.lewin.surveyquiz.di.components.DaggerActivityComponent;
 import com.example.lewin.surveyquiz.di.module.ActivityModule;
-
-import com.example.lewin.surveyquiz.Fragments.StartFragment.StartFragment;
-
-import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
 

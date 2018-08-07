@@ -10,7 +10,6 @@ import com.example.lewin.surveyquiz.SurveyApplication;
 //import com.example.lewin.surveyquiz.data.DataManager;
 //import com.example.lewin.surveyquiz.data.DbHelper;
 //import com.example.lewin.surveyquiz.data.SharedPrefsHelper;
-import com.example.lewin.surveyquiz.di.ApplicationContext;
 import com.example.lewin.surveyquiz.di.module.ApplicationModule;
 
 import javax.inject.Singleton;
@@ -27,7 +26,6 @@ public interface ApplicationComponent {
     void inject(QuestionFragment questionFragment);
     void inject(ResultFragment resultFragment);
 
-    @ApplicationContext
     Context getContext();
 
     Application getApplication();
