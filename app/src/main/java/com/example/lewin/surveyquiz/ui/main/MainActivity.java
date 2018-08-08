@@ -20,7 +20,6 @@ public final class MainActivity extends BaseActivity implements FragmentListener
         }
     }
 
-
     @Override
     public void onStartClicked() {
         navigator.toQuestion();
