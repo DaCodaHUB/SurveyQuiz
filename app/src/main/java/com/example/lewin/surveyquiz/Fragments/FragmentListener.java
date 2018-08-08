@@ -1,6 +1,6 @@
 package com.example.lewin.surveyquiz.Fragments;
 
-public interface MainFragmentListener {
+public interface FragmentListener {
 
     void onStartClicked();
 
