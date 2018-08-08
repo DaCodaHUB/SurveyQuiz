@@ -2,7 +2,7 @@ package com.example.lewin.surveyquiz.ui.main;
 
 import android.app.Activity;
 
-import com.example.lewin.surveyquiz.Fragments.MainFragmentListener;
+import com.example.lewin.surveyquiz.Fragments.FragmentListener;
 import com.example.lewin.surveyquiz.Fragments.StartFragment.StartFragment;
 import com.example.lewin.surveyquiz.Fragments.StartFragment.StartFragmentModule;
 import com.example.lewin.surveyquiz.di.PerActivity;
@@ -26,6 +26,6 @@ public abstract class MainActivityModule {
 
     @Binds
     @PerActivity
-    abstract MainFragmentListener mainFragmentListener(MainActivity mainActivity);
+    abstract FragmentListener mainFragmentListener(MainActivity mainActivity);
 
 }

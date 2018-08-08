@@ -3,12 +3,12 @@ package com.example.lewin.surveyquiz.ui.main;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.example.lewin.surveyquiz.Fragments.MainFragmentListener;
+import com.example.lewin.surveyquiz.Fragments.FragmentListener;
 import com.example.lewin.surveyquiz.Fragments.StartFragment.StartFragment;
 import com.example.lewin.surveyquiz.R;
 import com.example.lewin.surveyquiz.ui.common.BaseActivity;
 
-public final class MainActivity extends BaseActivity implements MainFragmentListener {
+public final class MainActivity extends BaseActivity implements FragmentListener {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
