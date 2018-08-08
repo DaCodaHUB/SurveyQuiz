@@ -13,21 +13,8 @@ public final class Navigator {
     Navigator() {
     }
 
-    /*
-    public void toExample1(Context context) {
-        Intent intent = new Intent(context, Example1Activity.class);
-        context.startActivity(intent);
-    }
+    public void toQuestion() {
 
-    public void toExample2(Context context) {
-        Intent intent = new Intent(context, Example2Activity.class);
-        context.startActivity(intent);
     }
-
-    public void toExample3(Context context) {
-        Intent intent = new Intent(context, Example3Activity.class);
-        context.startActivity(intent);
-    }
-    */
 }
 

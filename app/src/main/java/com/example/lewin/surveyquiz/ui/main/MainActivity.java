@@ -1,45 +1,30 @@
 package com.example.lewin.surveyquiz.ui.main;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.Nullable;
 
+import com.example.lewin.surveyquiz.Fragments.MainFragmentListener;
 import com.example.lewin.surveyquiz.Fragments.StartFragment.StartFragment;
 import com.example.lewin.surveyquiz.R;
-import com.example.lewin.surveyquiz.SurveyApplication;
-import com.example.lewin.surveyquiz.di.components.ActivityComponent;
-import com.example.lewin.surveyquiz.di.components.DaggerActivityComponent;
-import com.example.lewin.surveyquiz.di.module.ActivityModule;
+import com.example.lewin.surveyquiz.ui.common.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
-
-    private ActivityComponent activityComponent;
-    private FragmentTransaction fragmentTransaction;
-
-    public ActivityComponent getActivityComponent() {
-        if (activityComponent == null) {
-            activityComponent = DaggerActivityComponent.builder()
-                    .activityModule(new ActivityModule(this))
-                    .applicationComponent(SurveyApplication.get(this).getComponent())
-                    .build();
-        }
-        return activityComponent;
-    }
+public final class MainActivity extends BaseActivity implements MainFragmentListener {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getActivityComponent().inject(this);
-
-        // Set up Fragment manager and fragment transaction
-        //FragmentManager frag_manager = getSupportFragmentManager();
-        //FragmentTransaction frag_transaction = frag_manager.beginTransaction();
-
-        // Put the third fragment to the screen
-        fragmentTransaction.replace(R.id.frame, new StartFragment());
-        fragmentTransaction.commit();
-
+        if (savedInstanceState == null) {
+            addFragment(R.id.frame, new StartFragment());
+        }
     }
+
+
+    @Override
+    public void onStartClicked() {
+        navigator.toQuestion();
+    }
+
 }
+
