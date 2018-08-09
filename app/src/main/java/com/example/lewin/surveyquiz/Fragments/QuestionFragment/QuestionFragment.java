@@ -40,7 +40,7 @@ public class QuestionFragment extends BaseViewFragment<QuestionPresenter>
     FragmentListener listener;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_start, container, false);
     }

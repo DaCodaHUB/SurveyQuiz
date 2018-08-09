@@ -3,6 +3,10 @@ package com.example.lewin.surveyquiz.ui.main;
 import android.app.Activity;
 
 import com.example.lewin.surveyquiz.Fragments.FragmentListener;
+import com.example.lewin.surveyquiz.Fragments.QuestionFragment.QuestionFragment;
+import com.example.lewin.surveyquiz.Fragments.QuestionFragment.QuestionFragmentModule;
+import com.example.lewin.surveyquiz.Fragments.ResultFragment.ResultFragment;
+import com.example.lewin.surveyquiz.Fragments.ResultFragment.ResultFragmentModule;
 import com.example.lewin.surveyquiz.Fragments.StartFragment.StartFragment;
 import com.example.lewin.surveyquiz.Fragments.StartFragment.StartFragmentModule;
 import com.example.lewin.surveyquiz.di.PerActivity;
@@ -18,7 +22,15 @@ public abstract class MainActivityModule {
 
     @PerFragment
     @ContributesAndroidInjector(modules = StartFragmentModule.class)
-    abstract StartFragment mainFragmentInjector();
+    abstract StartFragment startFragmentInjector();
+
+    @PerFragment
+    @ContributesAndroidInjector(modules = QuestionFragmentModule.class)
+    abstract QuestionFragment questionFragmentInjector();
+
+    @PerFragment
+    @ContributesAndroidInjector(modules = ResultFragmentModule.class)
+    abstract ResultFragment resultFragmentInjector();
 
     @Binds
     @PerActivity
