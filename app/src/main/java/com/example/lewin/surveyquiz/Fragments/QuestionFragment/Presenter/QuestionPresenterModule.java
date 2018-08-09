@@ -10,6 +10,6 @@ public abstract class QuestionPresenterModule {
 
     @Binds
     @PerFragment
-    abstract QuestionPresenter questionPresenter(QuestionPresenterImpl example1PresenterImpl);
+    abstract QuestionPresenter questionPresenter(QuestionPresenterImpl questionPresenterImpl);
 }
 

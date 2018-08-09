@@ -17,21 +17,13 @@ import dagger.Module;
 })
 public abstract class QuestionFragmentModule {
 
-    /**
-     * As per the contract specified in {@link BaseFragmentModule}; "This must be included in all
-     * fragment modules, which must provide a concrete implementation of {@link Fragment}
-     * and named {@link BaseFragmentModule#FRAGMENT}.
-     *
-     * @param example1Fragment the example 1 fragment
-     * @return the fragment
-     */
     @Binds
     @Named(BaseFragmentModule.FRAGMENT)
     @PerFragment
-    abstract Fragment fragment(QuestionFragment example1Fragment);
+    abstract Fragment fragment(QuestionFragment questionFragment);
 
     @Binds
     @PerFragment
-    abstract QuestionView example1View(QuestionFragment example1Fragment);
+    abstract QuestionView questionView(QuestionFragment questionFragment);
 }
 

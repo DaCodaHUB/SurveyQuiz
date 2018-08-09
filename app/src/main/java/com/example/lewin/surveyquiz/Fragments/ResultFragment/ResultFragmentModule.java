@@ -24,6 +24,6 @@ public abstract class ResultFragmentModule {
 
     @Binds
     @PerFragment
-    abstract ResultView example1View(ResultFragment example1Fragment);
+    abstract ResultView resultView(ResultFragment resultFragment);
 }
 

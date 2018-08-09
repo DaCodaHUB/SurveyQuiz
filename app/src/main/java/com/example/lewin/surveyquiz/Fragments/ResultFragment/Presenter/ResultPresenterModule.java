@@ -11,6 +11,6 @@ public abstract class ResultPresenterModule {
 
     @Binds
     @PerFragment
-    abstract ResultPresenter example1Presenter(ResultPresenterImpl example1PresenterImpl);
+    abstract ResultPresenter resultPresenter(ResultPresenterImpl resultPresenterImpl);
 }
 

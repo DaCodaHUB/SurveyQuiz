@@ -42,9 +42,17 @@ public abstract class BaseActivity extends Activity implements HasFragmentInject
         return fragmentInjector;
     }
 
-    protected final void addFragment(@IdRes int containerViewId, Fragment fragment) {
+    protected final void addFragment(@IdRes int containerViewId, Fragment fragment, String tag) {
         fragmentManager.beginTransaction()
                 .add(containerViewId, fragment)
+                .addToBackStack(tag)
+                .commit();
+    }
+
+    protected final void replaceFragment(@IdRes int containerViewId, Fragment fragment, String tag) {
+        fragmentManager.beginTransaction()
+                .replace(containerViewId, fragment)
+                .addToBackStack(tag)
                 .commit();
     }
 
