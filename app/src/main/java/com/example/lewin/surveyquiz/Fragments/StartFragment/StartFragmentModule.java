@@ -16,6 +16,6 @@ public abstract class StartFragmentModule {
     @Binds
     @Named(BaseFragmentModule.FRAGMENT)
     @PerFragment
-    abstract Fragment fragment(StartFragment mainFragment);
+    abstract Fragment fragment(StartFragment startFragment);
 }
 
