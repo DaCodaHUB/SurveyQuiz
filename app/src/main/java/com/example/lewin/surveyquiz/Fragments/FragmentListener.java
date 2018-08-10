@@ -4,8 +4,8 @@ public interface FragmentListener {
 
     void onStartClicked();
     void onAnsAClicked();
-    //void onAnsBClicked();
-    //void onAnsCClicked();
-    //void onAnsDClicked();
+    void onAnsBClicked();
+    void onAnsCClicked();
+    void onAnsDClicked();
 }
 

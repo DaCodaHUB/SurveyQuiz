@@ -18,7 +18,7 @@ public final class MainActivity extends BaseActivity implements FragmentListener
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
-            addFragment(R.id.frame, new StartFragment(),"Start");
+            addFragment(R.id.frame, new StartFragment());
         }
     }
 
@@ -29,6 +29,21 @@ public final class MainActivity extends BaseActivity implements FragmentListener
 
     @Override
     public void onAnsAClicked() {
+        replaceFragment(R.id.frame, new ResultFragment(), "Result");
+    }
+
+    @Override
+    public void onAnsBClicked() {
+        replaceFragment(R.id.frame, new ResultFragment(), "Result");
+    }
+
+    @Override
+    public void onAnsCClicked() {
+        replaceFragment(R.id.frame, new ResultFragment(), "Result");
+    }
+
+    @Override
+    public void onAnsDClicked() {
         replaceFragment(R.id.frame, new ResultFragment(), "Result");
     }
 
