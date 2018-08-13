@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.DialogFragment;
+import android.app.FragmentTransaction;
 
 import com.example.lewin.surveyquiz.Navigator.Navigator;
 
@@ -48,10 +49,11 @@ public abstract class BaseActivity extends Activity implements HasFragmentInject
                 .commit();
     }
 
-    protected final void replaceFragment(@IdRes int containerViewId, Fragment fragment, String tag) {
+    protected final void replaceFragment(@IdRes int containerViewId, Fragment fragment) {
         fragmentManager.beginTransaction()
                 .replace(containerViewId, fragment)
-                .addToBackStack(tag)
+                .addToBackStack(null)
+                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                 .commit();
     }
 
