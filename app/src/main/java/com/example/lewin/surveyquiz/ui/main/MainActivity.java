@@ -24,27 +24,27 @@ public final class MainActivity extends BaseActivity implements FragmentListener
 
     @Override
     public void onStartClicked() {
-        replaceFragment(R.id.frame, new QuestionFragment(), "Question");
+        replaceFragment(R.id.frame, new QuestionFragment());
     }
 
     @Override
     public void onAnsAClicked() {
-        replaceFragment(R.id.frame, new ResultFragment(), "Result");
+        replaceFragment(R.id.frame, new ResultFragment());
     }
 
     @Override
     public void onAnsBClicked() {
-        replaceFragment(R.id.frame, new ResultFragment(), "Result");
+        replaceFragment(R.id.frame, new ResultFragment());
     }
 
     @Override
     public void onAnsCClicked() {
-        replaceFragment(R.id.frame, new ResultFragment(), "Result");
+        replaceFragment(R.id.frame, new ResultFragment());
     }
 
     @Override
     public void onAnsDClicked() {
-        replaceFragment(R.id.frame, new ResultFragment(), "Result");
+        replaceFragment(R.id.frame, new ResultFragment());
     }
 
 }
