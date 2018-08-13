@@ -18,7 +18,7 @@ final class ResultPresenterImpl extends BasePresenter<ResultView> implements Res
 
     @Override
     public void onDoSomething() {
-
+        // Todo: Replace with RxJava
     }
 }
 

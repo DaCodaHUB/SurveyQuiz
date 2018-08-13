@@ -16,7 +16,7 @@ final class QuestionPresenterImpl extends BasePresenter<QuestionView> implements
 
     @Override
     public void onDoSomething() {
-
+        // Todo: replace with Rxjava
     }
 }
 

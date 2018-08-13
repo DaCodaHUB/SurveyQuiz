@@ -27,6 +27,6 @@ public final class ResultFragment extends BaseViewFragment<ResultPresenter>
 
     @Override
     public void showResult(String result) {
-
+        // Todo: Set Result
     }
 }

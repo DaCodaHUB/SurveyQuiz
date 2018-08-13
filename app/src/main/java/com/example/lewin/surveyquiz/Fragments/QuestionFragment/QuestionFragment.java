@@ -47,6 +47,11 @@ public class QuestionFragment extends BaseViewFragment<QuestionPresenter>
         return inflater.inflate(R.layout.fragment_question, container, false);
     }
 
+    @Override
+    public void showQuestion() {
+        // Todo: Set Texts
+    }
+
     @OnClick(R.id.answerA)
     void onAnsAClicked() {
         listener.onAnsAClicked();
